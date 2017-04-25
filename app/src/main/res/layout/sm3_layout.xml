@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sm3_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xui.sm23.sm3">
+
+    <TextView
+        android:id="@+id/sm3_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="请输入需要散列的字段或者选择需要散列的文件"
+        android:textSize="16.5sp" />
+
+    <EditText
+        android:id="@+id/sm3_edittext"
+        android:layout_width="435dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="请输入需要散列的数据"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:layout_below="@+id/sm3_textview"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sm3_button_queding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp" />
+
+    <Button
+        android:text="选择文件"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sm3_button_queding"
+        android:layout_alignLeft="@+id/sm3_button_queding"
+        android:layout_alignStart="@+id/sm3_button_queding"
+        android:layout_marginBottom="67dp"
+        android:id="@+id/sm3_button_xuanzewenjian" />
+
+
+</RelativeLayout>
