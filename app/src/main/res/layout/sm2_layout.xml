@@ -10,4 +10,119 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.xui.sm23.sm2">
 
+    <TextView
+        android:text="请填写相应数据"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sm2_textView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="签名/验签内容"
+        android:maxLines="1"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/sm2_editText_M"
+        android:layout_below="@+id/sm2_editText_IDA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="公钥"
+        android:maxLines="1"
+        android:gravity="center"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/sm2_editText_gongyue"
+        android:layout_below="@+id/sm2_editText_M"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="ID"
+        android:maxLines="1"
+        android:ems="10"
+        android:layout_marginTop="24dp"
+        android:id="@+id/sm2_editText_IDA"
+        android:layout_below="@+id/sm2_textView"
+        android:layout_alignLeft="@+id/sm2_editText_gongyue"
+        android:layout_alignStart="@+id/sm2_editText_gongyue" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/sm2_editText_gongyue"
+        android:layout_alignStart="@+id/sm2_editText_gongyue"
+        android:id="@+id/sm2_editText_siyue"
+        android:hint="私钥"
+        android:maxLines="1"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="22dp"
+        android:id="@+id/sm2_editText_R"
+        android:layout_below="@+id/sm2_editText_siyue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="R"
+        android:gravity="center"
+        android:maxLines="1"/>
+
+    <EditText
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/sm2_editText_S"
+        android:hint="S"
+        android:layout_alignBaseline="@+id/sm2_editText_R"
+        android:layout_alignBottom="@+id/sm2_editText_R"
+        android:layout_toRightOf="@+id/sm2_editText_R"
+        android:layout_toEndOf="@+id/sm2_editText_R"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:gravity="center"
+        android:maxLines="1"/>
+
+    <Button
+        android:text="签名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sm2_editText_R"
+        android:layout_alignRight="@+id/sm2_editText_R"
+        android:layout_alignEnd="@+id/sm2_editText_R"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="38dp"
+        android:id="@+id/sm2_button_qianming" />
+
+    <Button
+        android:text="验签"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sm2_button_qianming"
+        android:layout_alignLeft="@+id/sm2_editText_S"
+        android:layout_alignStart="@+id/sm2_editText_S"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/sm2_button_yanqian" />
 </RelativeLayout>

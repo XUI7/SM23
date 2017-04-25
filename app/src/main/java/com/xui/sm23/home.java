@@ -32,6 +32,8 @@ public class home extends AppCompatActivity implements View.OnClickListener
                 startActivity(intent);
                 break;
             case R.id.home_button_sm2:
+                Intent intent1 = new Intent(home.this,sm2.class);
+                startActivity(intent1   );
                 break;
             default:
                 Toast.makeText(home.this," 该操作为指定命令",Toast.LENGTH_SHORT).show();
