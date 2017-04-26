@@ -34,46 +34,6 @@
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="公钥"
-        android:maxLines="1"
-        android:gravity="center"
-        android:ems="10"
-        android:layout_marginTop="12dp"
-        android:id="@+id/sm2_editText_gongyue"
-        android:layout_below="@+id/sm2_editText_M"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="ID"
-        android:maxLines="1"
-        android:ems="10"
-        android:layout_marginTop="24dp"
-        android:id="@+id/sm2_editText_IDA"
-        android:layout_below="@+id/sm2_textView"
-        android:layout_alignLeft="@+id/sm2_editText_gongyue"
-        android:layout_alignStart="@+id/sm2_editText_gongyue" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/sm2_editText_gongyue"
-        android:layout_alignStart="@+id/sm2_editText_gongyue"
-        android:id="@+id/sm2_editText_siyue"
-        android:hint="私钥"
-        android:maxLines="1"
-        android:gravity="center"/>
-
-    <EditText
         android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
@@ -125,4 +85,58 @@
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
         android:id="@+id/sm2_button_yanqian" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/sm2_editText_siyue"
+        android:hint="私钥"
+        android:maxLines="1"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="ID"
+        android:maxLines="1"
+        android:ems="10"
+        android:layout_marginTop="26dp"
+        android:id="@+id/sm2_editText_IDA"
+        android:layout_below="@+id/sm2_textView"
+        android:layout_alignLeft="@+id/sm2_editText_siyue"
+        android:layout_alignStart="@+id/sm2_editText_siyue" />
+
+    <EditText
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:id="@+id/sm2_editText_gongyue_x"
+        android:hint="公钥：x"
+        android:gravity="center"
+        android:maxLines="1"
+        android:layout_below="@+id/sm2_editText_M"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/sm2_editText_gongyue_y"
+        android:hint="公钥：y"
+        android:gravity="center"
+        android:maxLines="1"
+        android:layout_alignBaseline="@+id/sm2_editText_gongyue_x"
+        android:layout_alignBottom="@+id/sm2_editText_gongyue_x"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
